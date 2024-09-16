@@ -12,7 +12,7 @@ function Costomer() {
             <button>SEE ALL STORIES  &rarr;</button>
          </div>      
       <div className="Costomer-2">
-         <img src={Costome}className='Costomer-img-1' />
+         <img alt='img' src={Costome}className='Costomer-img-1' />
         
         </div>        
         

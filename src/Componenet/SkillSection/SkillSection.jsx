@@ -90,7 +90,7 @@ function App() {
 
 
 
-              <img src={Pic2} alt="Image 2" />
+              <img  src={Pic2} alt="Image 2" />
             </div>
           )}
           {activeTab === 3 && (
