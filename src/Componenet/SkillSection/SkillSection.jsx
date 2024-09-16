@@ -62,7 +62,7 @@ function App() {
               <div className="learn-section">
                 <div className="learn-section">
                   <div className="learn-icon">
-                    <img src={Logo2} className='Logo-img' alt="" />
+                    <img src={Logo2} className='Logo-img' alt="t" />
                   </div>
                   <div className="learn-content">
                     <h2>Pre-Screen</h2>
@@ -90,7 +90,7 @@ function App() {
 
 
 
-              <img  src={Pic2} alt="Image 2" />
+              <img src={Pic2} alt="Image 2" />
             </div>
           )}
           {activeTab === 3 && (
