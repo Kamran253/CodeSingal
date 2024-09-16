@@ -1,0 +1,85 @@
+.Costomer-main{
+width: 100%;
+height: 100vh; 
+display: flex;
+}
+.Costomer-1{
+    width: 49%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 30px;
+    flex: auto;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.Costomer-1 h1 {
+    font-size: 3rem;
+    font-family: sans-serif;
+}
+.Costomer-1 p {
+   font-weight: bold;
+}
+.Costomer-1 button{
+    width: 160px;
+    height: 40px;
+    cursor: pointer; 
+    background-color: white;
+    border: none;
+    color: blue;
+    font-weight: bold;
+    font-size: 15px;
+}
+.Costomer-2{
+    width: 49%;
+    margin-top: 50px;
+}
+.Costomer-img-1{
+    width: 550px;
+
+    border-radius: 2%;
+}
+
+@media(min-width: 768px) {
+    .Costomer-1,
+    .Costomer-2 {
+      width: 49%; /* On medium to large screens, set width to 49% */
+    }
+  }
+
+  @media(max-width: 768px) {
+    .Costomer-1 h1 {
+      font-size: 1.8rem;
+    }
+    
+    .Costomer-img-1 {
+      width: 100%;
+    }
+  }
+  
+  @media(max-width: 480px) {
+    .Costomer-1 p{
+      font-size: 1.2rem;
+    }
+    .Costomer-1{
+      margin-top: -230px; 
+      margin-left: 100px;
+    }
+    .Costomer-img-1{
+      width: 420px;
+      margin-top: -220px;
+      margin-left: 20px;
+    }
+    .Costomer-main{
+      display: block;
+    }
+    .Costomer-1 h1 {
+      font-size: 2.2rem;
+    }
+  
+    .Costomer-1 button {
+      width: 190px;
+      height: 35px;
+    }
+  }
