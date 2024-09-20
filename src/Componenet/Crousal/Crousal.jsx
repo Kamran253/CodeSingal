@@ -49,9 +49,7 @@ const Crousal = () => {
 
       </div>
    
-      {/* <div className="result-main">
-        f
-      </div> */}
+ 
      
     </div>
   );

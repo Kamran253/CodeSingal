@@ -88,8 +88,10 @@
 
 @media (max-width: 480px) {
 .integration-info{
-  margin-left: -174px;
-  width: 90%;
+  position: relative;
+  left: 0;
+  /* margin-left: -174px;
+  width: 90%; */
 }
  .slider-area{
   width: 90%;

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Result.css';
 import CountUp from 'react-countup';
 
-export default function Result() {
+  export default function Result() {
   const [startCount, setStartCount] = useState(false);
   const resultRef = useRef(null);
 
@@ -10,12 +10,12 @@ export default function Result() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setStartCount(true); // Start counting when the section is visible
+          setStartCount(true); 
         } else {
-          setStartCount(false); // Reset counting if you want it to re-trigger
+          setStartCount(false); 
         }
       },
-      { threshold: 0.5 } // Trigger when 50% of the section is visible
+      { threshold: 0.5 }  
     );
 
     if (resultRef.current) {
@@ -41,12 +41,12 @@ export default function Result() {
             <h1>
             {startCount ? (
                 <CountUp 
-                  start={0}  // Start at 0
-                  end={200}  // End at 200
-                  duration={2} // Duration for the count up
+                  start={0}  
+                  end={200} 
+                  duration={2}  
                 />
               ) : (
-                0 // Display 0 initially
+                0  
               )}
             </h1>
             <h3>Hours saved annually</h3>

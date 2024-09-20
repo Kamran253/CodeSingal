@@ -1,6 +1,6 @@
 import React from 'react';
 import './HeroSection.css';
-import Kam from '../../Images/pic.jpg'
+import Kam from '../../Images/pic.jpg';
 
 const HeroSection = () => {
   return (
@@ -18,7 +18,6 @@ const HeroSection = () => {
       </div>
       <div className="hero-image">
         <img src={Kam} className='kam' alt="Person at computer" />
-       
       </div>
     </section>
   );
