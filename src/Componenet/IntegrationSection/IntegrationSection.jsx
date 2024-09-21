@@ -75,7 +75,7 @@ const IntegrationSection = () => {
         </div>
       </div>
       <div className="integration-info">
-        <p>INTEGRATIONS</p>
+        <p>INTEGRATIaONS</p>
         <h2>All Of Your Favorite Tools, Connected</h2>
         <p className="pp">
           Our ecosystem of deep integrations makes it easy to <br />

@@ -90,7 +90,7 @@ function App() {
 
 
 
-              <img src={Pic2} alt="Image 2" />
+              <img src={Pic2} alt="Image2"  /> 
             </div>
           )}
           {activeTab === 3 && (
@@ -109,7 +109,7 @@ function App() {
               </div>
 
 
-              <img src={Pic3} alt="Image 3" />
+              <img src={Pic3} alt="Image3" />
             </div>
           )}
         </div>

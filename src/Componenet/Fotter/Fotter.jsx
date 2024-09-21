@@ -1,7 +1,6 @@
 import React from 'react';
 import '../Fotter/Fotter.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
-// import { faLinkedin, faYoutube, faTwitter, faFacebook } from '@fortawesome/fontawesome-svg-core'
 
 const Fotter = () => {
   return (
@@ -10,11 +9,11 @@ const Fotter = () => {
         <h3 className="column-title">Need product support?</h3>
         <button className="contact-button">Contact Support</button>
         <div className="social-icons">
-        <a href="#" className="social-link"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#" className="social-link"><i class="fa-brands fa-youtube"></i></a>
-        <a href="#" className="social-link"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#" className="social-link"><i class="fa-brands fa-facebook"></i></a>
-      </div>
+          <a href="#" className="social-link"><i className="fa-brands fa-linkedin"></i></a>
+          <a href="#" className="social-link"><i className="fa-brands fa-youtube"></i></a>
+          <a href="#" className="social-link"><i className="fa-brands fa-twitter"></i></a>
+          <a href="#" className="social-link"><i className="fa-brands fa-facebook"></i></a>
+        </div>
       </div>
     
       <div className="footer-column">
@@ -56,10 +55,10 @@ const Fotter = () => {
       </div>
 
       <div className="social-icons">
-        <a href="#" className="social-link"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#" className="social-link"><i class="fa-brands fa-youtube"></i></a>
-        <a href="#" className="social-link"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#" className="social-link"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" className="social-link"><i className="fa-brands fa-linkedin"></i></a>
+        <a href="#" className="social-link"><i className="fa-brands fa-youtube"></i></a>
+        <a href="#" className="social-link"><i className="fa-brands fa-twitter"></i></a>
+        <a href="#" className="social-link"><i className="fa-brands fa-facebook"></i></a>
       </div>
     </footer>
   );

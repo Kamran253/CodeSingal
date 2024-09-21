@@ -1,33 +1,31 @@
 .main-tab-contain {
   font-family: Arial, sans-serif;
-  background-color : #f5f5f5;
+  background-color: #f5f5f5;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   width: 100%;
+  height: auto  ;
+  padding: 0;
   margin: 0;
 }
 
 .tab-container {
-  margin-top: 60px;
-  width: 100%; 
+  width: 90%; /* Use percentage for responsiveness */
+  max-width: 900px; /* Max width for larger screens */
   background-color: #f8f8f8;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
-  height: 600px;
   text-align: center;
-
 }
 
 .tab-buttons {
   display: flex;
   justify-content: space-around;
   background-color: #ddd;
-  width: 900px;
   border-radius: 20px;
-  margin-left: 180px;
+  margin: 0 auto; /* Center buttons */
 }
 
 .tab-button {
@@ -37,10 +35,8 @@
   border: none;
   cursor: pointer;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
+  font-size: 2vw; /* Use viewport width for font size */
   transition: background-color 0.3s;
-  /* border-radius: 40px; */
-  
 }
 
 .tab-button.active {
@@ -50,59 +46,38 @@
 
 .tab-content {
   padding: 20px; 
-
 }
-.content{
+
+.content {
   display: flex;
   justify-content: center;
 }
+
 .learn-section {
   display: flex;
   align-items: flex-start;
   padding: 20px;
-  height: 167px;
   background-color: #f8f8f8;
   border-radius: 8px;
-  max-width: 460px;
-  font-family: Arial, sans-serif;
-  margin-left: -56px;
+  width: 100%; /* Full width */
+  max-width: 460px; /* Restrict max width */
+  margin: 0 auto; /* Center section */
 }
 
-.learn-section-2 {
-  display: flex; 
-  
-  /* align-items: flex-start; */
-  padding: 20px;
-  height: 167px;
-  background-color: #f8f8f8;
-  border-radius: 8px;
-  max-width: 460px;
-  font-family: Arial, sans-serif;
-  margin-left: -146px;
-}
-
-.Logo-img{
-  width: 500px !important ;
-  height: 90px;
-}
-
-.same{
-  width: 700px;
-  height: 400px;
+.Logo-img {
+  width: 30%; /* Use percentage for logo width */
+  max-width: 500px; /* Max width for larger screens */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .learn-content h2 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: left;
-  font-size: 24px;
+  font-size: 2rem; /* Use rem for responsive typography */
   color: #222222;
   margin: 0;
 }
 
 .learn-content p {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  text-align: left;
-  font-size: 16px;
+  font-size: 1rem; /* Use rem for responsive typography */
   color: #333333;
   margin: 10px 0;
 }
@@ -112,22 +87,9 @@
   color: #0062ff;
   text-decoration: none; 
   background-color: #f8f8f8;
-  font-size: 16px;
-  width: 140px;
-  margin-left: -190px;
+  font-size: 1rem; /* Use rem for consistent sizing */
   border: none;
-  /* text-align: left; */
-}
-.learn-link-2 {
-  font-weight: bold;
-  color: #0062ff;
-  text-decoration: none; 
-  background-color: #f8f8f8;
-  font-size: 16px;
-  width: 140px;
-  margin-left: -160px;
-  border: none;
-  /* text-align: left; */
+  padding: 10px 15px; /* Add padding */
 }
 
 .learn-link:hover {
@@ -135,89 +97,74 @@
 }
 
 .tab-content img {
-  max-width: 40%;
+  max-width: 40%; /* Original size for desktop */
   height: auto;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
-.tab-content p {
-  font-size: 16px;
-  color: #333;
-}
-
 @media (max-width: 768px) {
-  .main-tab-contain{
-    width: 90%;
-    height: 75vh;
+  .tab-container {
+    width: 95%; /* Adjust width for smaller screens */
   }
-  .tab-container{
-    height: 85vh;
-  }
+
   .tab-buttons {
-    flex-direction: column;
-    width: 50%;
-    margin-top: 20px;
-    margin-left: 120px;
+    flex-direction: column; /* Stack buttons */
+    margin: 20px 0; /* Space out buttons */
   }
 
   .tab-button {
-    margin-bottom: 10px;
-  } 
+    margin-bottom: 10px; /* Space between buttons */
+    font-size: 4vw; /* Adjust font size */
+  }
 
-  .learn-section, 
-  .learn-section-2 {
-    flex-direction: column;
+  .tab-content {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content */
+  }
+
+  .learn-section {
+    flex-direction: column; /* Stack content vertically */
     text-align: center;
-    margin-left: 0;
-    max-width: 100%;
+    max-width: 100%; /* Full width on mobile */
+    margin: 10px auto; /* Center section with margin */
+    padding: 10px; /* Add padding */
   }
 
   .learn-content h2 {
-    font-size: 20px;
+    font-size: 1.5rem; /* Smaller heading */
   }
 
   .learn-content p {
-    font-size: 14px;
+    font-size: 0.875rem; /* Smaller paragraph */
   }
-.learn-link{
-  margin-left: 20px;
-}
-.learn-link-2{
-  margin-left: 20px;
 
-}
-  .Logo-img {
-    max-width: 100px;
-    height: auto;
+  .learn-link {
+    width: 100%; /* Full width button */
+    margin-top: 10px; /* Space out button */
+  }
+
+  .tab-content img {
+    max-width: 80%; /* Responsive image on mobile */
+    margin: 10px 0; /* Space around images */
   }
 }
 
 @media (max-width: 480px) {
-  .main-tab-contain {
-    /* padding: 20px; */
-    /* flex-direction: row; */
-  } 
-  .tab-content img {
-    max-width: 60%;
-    margin-left: -70px;
-   
-}
-
-  .tab-button {
-    font-size: 16px;
-    padding: 10px;
+  .learn-section {
+    max-width: 100%; /* Full width on small screens */
   }
 
   .learn-content h2 {
-    font-size: 18px;
+    font-size: 1.25rem; /* Smaller heading */
   }
 
   .learn-content p {
-    font-size: 12px;
+    font-size: 0.75rem; /* Smaller paragraph */
   }
- 
+
   .Logo-img {
-    max-width: 150px;
+    max-width: 80px; /* Smaller logo */
   }
 }
