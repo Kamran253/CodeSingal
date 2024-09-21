@@ -41,6 +41,7 @@
     }
 }
 
+
 .login-h2 {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -97,4 +98,43 @@
 
 .button1:hover {
     background-color: #0288d1;
+}
+
+@media (max-width: 768px) {
+    .login-box {
+        max-width: 350px;
+        padding: 30px;
+    }
+
+    .login-h2 {
+        font-size: 1.75rem;
+    }
+
+    .input-box input,
+    .input-box label {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive design for mobile phones */
+@media (max-width: 480px) {
+    .login-box {
+        max-width: 90%; /* Reducing the width to fit smaller screens */
+        padding: 20px;
+        /* z-index: -1; */
+    }
+
+    .login-h2 {
+        font-size: 1.5rem;
+    }
+
+    .input-box input,
+    .input-box label {
+        font-size: 0.8rem;
+    }
+
+    .button1 {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
 }
