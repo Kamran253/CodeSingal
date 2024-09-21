@@ -120,7 +120,7 @@
 @media (max-width: 480px) {
     .login-box {
         max-width: 90%; /* Reducing the width to fit smaller screens */
-        padding: 20px;
+        padding: 20px;      
         /* z-index: -1; */
     }
 
