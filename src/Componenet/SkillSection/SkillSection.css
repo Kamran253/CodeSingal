@@ -195,7 +195,7 @@
 
 @media (max-width: 480px) {
   .main-tab-contain {
-    padding: 20px;
+    /* padding: 20px; */
     /* flex-direction: row; */
   } 
   .tab-content img {
