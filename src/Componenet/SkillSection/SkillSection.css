@@ -5,14 +5,14 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto  ;
+  height: auto;
   padding: 0;
   margin: 0;
 }
 
 .tab-container {
-  width: 90%; /* Use percentage for responsiveness */
-  max-width: 900px; /* Max width for larger screens */
+  width: 90%;
+  max-width: 1200px; /* Increased max-width for larger screens */
   background-color: #f8f8f8;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -24,18 +24,16 @@
   display: flex;
   justify-content: space-around;
   background-color: #ddd;
-  border-radius: 20px;
-  margin: 0 auto; /* Center buttons */
+  margin: 0 auto;
 }
 
 .tab-button {
   flex: 1;
-  padding: 15px;
+  padding: 10px;
   background-color: #e7e5e5;
   border: none;
   cursor: pointer;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 2vw; /* Use viewport width for font size */
+  font-size: 1.2rem; /* Scalable font size */
   transition: background-color 0.3s;
 }
 
@@ -45,41 +43,41 @@
 }
 
 .tab-content {
-  padding: 20px; 
+  padding: 20px;
 }
 
 .content {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+  justify-content: space-around;
 }
 
 .learn-section {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
   background-color: #f8f8f8;
   border-radius: 8px;
-  width: 100%; /* Full width */
-  max-width: 460px; /* Restrict max width */
-  margin: 0 auto; /* Center section */
+  width: 100%;
+  max-width: 500px;
 }
 
 .Logo-img {
-  width: 30%; /* Use percentage for logo width */
-  max-width: 500px; /* Max width for larger screens */
-  height: auto; /* Maintain aspect ratio */
+  width: 100px; 
+  height: auto; 
 }
 
 .learn-content h2 {
-  font-size: 2rem; /* Use rem for responsive typography */
+  font-size: 2rem;
   color: #222222;
-  margin: 0;
 }
 
 .learn-content p {
-  font-size: 1rem; /* Use rem for responsive typography */
+  font-size: 1rem;
   color: #333333;
   margin: 10px 0;
+  text-align: start;
 }
 
 .learn-link {
@@ -87,84 +85,61 @@
   color: #0062ff;
   text-decoration: none; 
   background-color: #f8f8f8;
-  font-size: 1rem; /* Use rem for consistent sizing */
+  font-size: 1rem;
   border: none;
-  padding: 10px 15px; /* Add padding */
+  padding: 10px 15px;
 }
 
 .learn-link:hover {
   text-decoration: underline;
 }
 
-.tab-content img {
-  max-width: 40%; /* Original size for desktop */
+.main-image {
+  max-width: 40%;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
   .tab-container {
-    width: 95%; /* Adjust width for smaller screens */
+    width: 95%;
   }
 
   .tab-buttons {
-    flex-direction: column; /* Stack buttons */
-    margin: 20px 0; /* Space out buttons */
+    flex-direction: column;
+    margin: 20px 0;
   }
 
   .tab-button {
-    margin-bottom: 10px; /* Space between buttons */
-    font-size: 4vw; /* Adjust font size */
+    margin-bottom: 10px;
+    font-size: 1rem;
   }
 
-  .tab-content {
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center content */
+  .content {
+    flex-direction: column;
+    align-items: center;
   }
 
   .learn-section {
-    flex-direction: column; /* Stack content vertically */
-    text-align: center;
-    max-width: 100%; /* Full width on mobile */
-    margin: 10px auto; /* Center section with margin */
-    padding: 10px; /* Add padding */
+    max-width: 100%;
   }
 
-  .learn-content h2 {
-    font-size: 1.5rem; /* Smaller heading */
-  }
-
-  .learn-content p {
-    font-size: 0.875rem; /* Smaller paragraph */
-  }
-
-  .learn-link {
-    width: 100%; /* Full width button */
-    margin-top: 10px; /* Space out button */
-  }
-
-  .tab-content img {
-    max-width: 80%; /* Responsive image on mobile */
-    margin: 10px 0; /* Space around images */
+  .main-image {
+    max-width: 80%;
+    margin: 10px 0;
   }
 }
 
 @media (max-width: 480px) {
-  .learn-section {
-    max-width: 100%; /* Full width on small screens */
-  }
-
   .learn-content h2 {
-    font-size: 1.25rem; /* Smaller heading */
+    font-size: 1.5rem;
   }
 
   .learn-content p {
-    font-size: 0.75rem; /* Smaller paragraph */
+    font-size: 0.875rem;
   }
 
   .Logo-img {
-    max-width: 80px; /* Smaller logo */
+    width: 80px;
   }
 }
