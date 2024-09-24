@@ -16,6 +16,11 @@ const Navbar = () => {
         <img src={eagle} alt="Logo" className="logo" />
         CodeSignal
       </div>
+      <button className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </button>
       <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
         <li><NavLink to="/" activeClassName="active-link" exact>Home</NavLink></li>
         <li><NavLink to="/Products" activeClassName="active-link">Products</NavLink></li>
@@ -27,11 +32,6 @@ const Navbar = () => {
         <li><NavLink to="/login" activeClassName="active-link">Log In</NavLink></li>
       </ul>
       <button className="button">Get Started</button>
-      <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
-      </div>
     </nav>
   );
 };
