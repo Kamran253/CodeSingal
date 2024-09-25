@@ -7,8 +7,8 @@ const CostomerMain = () => {
   return (
     <div>
     <Costomer/>
-    {/* <CarouselSlider/>
-    <Result/> */}
+    {/* <CarouselSlider/> */}
+    <Result/>
 
        
     </div>

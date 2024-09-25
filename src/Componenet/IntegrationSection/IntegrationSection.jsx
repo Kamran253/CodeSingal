@@ -28,7 +28,7 @@ const commonSettings = {
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
       },
     },
@@ -75,7 +75,7 @@ const IntegrationSection = () => {
         </div>
       </div>
       <div className="integration-info">
-        <p>INTEGRATIaONS</p>
+        <p>INTEGRATIONS</p>
         <h2>All Of Your Favorite Tools, Connected</h2>
         <p className="pp">
           Our ecosystem of deep integrations makes it easy to <br />

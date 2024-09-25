@@ -9,6 +9,7 @@ import Card from '../Componenet/Card/Card'
 import Fotter from '../Componenet/Fotter/Fotter'
 import SkillSection from '../Componenet/SkillSection/SkillSection' 
 import CostomerMain from '../Componenet/CostomerMain'
+import Result from '../Componenet/Result'
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 export default function Home() {
   return (
@@ -19,8 +20,8 @@ export default function Home() {
       <SkillSection />
       <CosmoComponent/>
       <IntegrationSection/> 
-     
      <CostomerMain/>
+     {/* <Result/> */}
      <Resources/>
      <Card/>
      

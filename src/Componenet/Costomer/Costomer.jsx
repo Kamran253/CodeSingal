@@ -1,7 +1,10 @@
  import './Costomer.css'
  import React, { useState, useEffect, useRef } from 'react';
  import Cos from '../../Images/Costomer.jpg'
+ import CarouselSlider from  '../Crousal/Crousal'
  import CountUp from 'react-countup';
+// import { Result } from 'postcss';
+import Result from '../Result'
 const Customer = () => {
   const slides = [
     {
@@ -69,11 +72,13 @@ const Customer = () => {
         <img src={Cos} alt="Customer Stori" />
       </div>
     </section>
+      {/* <Result/> */}
+        {/* <CarouselSlider/> */}
 
     <section>
 
     
-    <div className="slider-conta">
+    {/* <div className="slider-conta">
       <div className="sli">
         <button className="prev-btn" onClick={goToPrevSlide}>❮</button>
         <button className="next-btn" onClick={goToNextSlide}>❯</button>
@@ -86,9 +91,9 @@ const Customer = () => {
           {slides[currentIndex].description}
         </div>
       </div>
-    </div>
+    </div> */}
     </section>
-    <div className='result-main' ref={resultRef}>
+    {/* <div className='result-main' ref={resultRef}>
       <div className="result-main-1">
         <h1 className='headin'>
           Results our <br />
@@ -115,7 +120,7 @@ const Customer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
           </div>
     </>
   );
