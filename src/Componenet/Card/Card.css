@@ -67,7 +67,9 @@
     align-items: center;
   }
 
+
   .car {
+   width: 80%;
     flex: 1 1 100%; /* Full width on small screens */
     margin: 10px 0; /* Adjust margin for small screens */
   }
@@ -80,15 +82,26 @@
 /* Very small screens (phones in portrait mode) */
 @media (max-width: 480px) {
   .car h3 {
-    font-size: 1.2em; /* Further reduce font size */
+    font-size: 1.0em; /* Further reduce font size */
   }
 
   .ico-img {
-    width: 70px; /* Adjust icon size */
+    width: 60px; /* Adjust icon size */
   }
 
   .car button {
     padding: 8px 16px; /* Smaller button padding */
     font-size: 0.9em;
   }
+  .car{
+   width: 80%;
+  }
+ 
+}
+@media (max-width: 349px) {
+  .car {
+    margin: 0%;
+    padding: 0%;
+    width: 40% !important;
+   } 
 }
